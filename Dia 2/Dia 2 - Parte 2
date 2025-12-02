@@ -1,0 +1,68 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <fstream>
+
+using namespace std;
+
+// Devuelve true si un número está formado por un patrón repetido >= 2 veces
+bool es_id_invalido(long long numero) {
+    string s = to_string(numero);
+    int n = s.size();
+
+    // Probar todas las longitudes posibles del patrón
+    for (int len = 1; len <= n / 2; len++) {
+
+        // La longitud total debe ser múltiplo del patrón
+        if (n % len != 0) continue;
+
+        string patron = s.substr(0, len);
+        bool valido = true;
+
+        // Comprobar si toda la cadena son repeticiones del patrón
+        for (int i = len; i < n; i += len) {
+            if (s.substr(i, len) != patron) {
+                valido = false;
+                break;
+            }
+        }
+
+        if (valido) return true;   // Encontrado patrón repetido >= 2 veces
+    }
+
+    return false;
+}
+
+int main() {
+    ifstream archivo("rangos_id.txt");
+    if (!archivo.is_open()) {
+        cout << "No se pudo abrir el archivo." << endl;
+        return 1;
+    }
+
+    string linea;
+    getline(archivo, linea);
+    archivo.close();
+
+    long long suma_total = 0;
+
+    stringstream flujo(linea);
+    string rango;
+
+    while (getline(flujo, rango, ',')) {
+        size_t pos = rango.find('-');
+        if (pos == string::npos) continue;
+
+        long long inicio = stoll(rango.substr(0, pos));
+        long long fin    = stoll(rango.substr(pos + 1));
+
+        for (long long id = inicio; id <= fin; ++id) {
+            if (es_id_invalido(id)) {
+                suma_total += id;
+            }
+        }
+    }
+
+    cout << suma_total << endl;
+    return 0;
+}
