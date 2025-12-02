@@ -1,0 +1,67 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <fstream>
+
+using namespace std;
+
+// Devuelve true si el número es de la forma XX (cadena repetida dos veces)
+bool es_id_invalido(long long numero) {
+    string texto = to_string(numero);
+    int longitud = texto.size();
+
+    // Si la longitud es impar, no puede ser "algo" repetido dos veces
+    if (longitud % 2 != 0) {
+        return false;
+    }
+
+    int mitad = longitud / 2;
+    string izquierda = texto.substr(0, mitad);
+    string derecha   = texto.substr(mitad, mitad);
+
+    return (izquierda == derecha);
+}
+
+int main() {
+    string linea;
+
+    ifstream archivo("rangos_id.txt"); 
+    if (!archivo.is_open()) {
+        cout << "No se pudo abrir el archivo." << endl;
+        return 1;
+    }
+    if (!getline(archivo, linea)) {
+        cout << "El archivo está vacío." << endl;
+        return 1;
+    }
+
+    archivo.close();
+
+    long long suma_total = 0;
+
+    stringstream flujo(linea);
+    string rango;
+
+    while (getline(flujo, rango, ',')) {
+        if (rango.empty()) continue;
+
+        size_t posicion_guion = rango.find('-');
+        if (posicion_guion == string::npos) continue;
+
+        string texto_inicio = rango.substr(0, posicion_guion);
+        string texto_fin    = rango.substr(posicion_guion + 1);
+
+        long long inicio = stoll(texto_inicio);
+        long long fin    = stoll(texto_fin);
+
+        for (long long id = inicio; id <= fin; ++id) {
+            if (es_id_invalido(id)) {
+                suma_total += id;
+            }
+        }
+    }
+
+    cout << suma_total << endl;
+
+    return 0;
+}
