@@ -123,3 +123,4 @@ int main()
     cout << "Cantidad total de veces que se pasó por el 0 (incluyendo durante el giro): " << contador_0 << endl;
     return 0;
 }
+
