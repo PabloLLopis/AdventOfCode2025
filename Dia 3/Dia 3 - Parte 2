@@ -43,7 +43,7 @@ long long voltage(const vector<int> &v)
         pos = max_posicion(v, mayor, pos);
 
         res = res * 10 + mayor;
-        ++pos;  
+        pos++;  
     }
 
     return res;
