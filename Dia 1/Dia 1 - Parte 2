@@ -1,18 +1,16 @@
 #include <iostream>
-#include <cctype>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <cmath>
 #include <fstream>
-using namespace std;
-vector<int> numeros_caja;
+#include <string>
 
+using namespace std;
+
+// Función para determinar la dirección de la orden (L o R)
 char obtener_direccion(string orden)
 {
     return orden[0];
 }
 
+// Función para extraer el número de pasos del giro de la orden
 int obtener_giro(string orden)
 {
     int giro = 0;
@@ -31,6 +29,8 @@ int obtener_giro(string orden)
         throw runtime_error("Orden invalida: No se pudo convertir el giro a un número");
     }
 }
+
+// Función para simular la rotación y devolver la nueva posición
 int girar(int giro, int posicion, char dir)
 {
     if (dir == 'R')
@@ -41,41 +41,31 @@ int girar(int giro, int posicion, char dir)
     {
         posicion -= giro;
     }
-    posicion = (posicion % 100 + 100) % 100;
+    posicion = (posicion % 100 + 100) % 100; // Asegura que la rotación sea circular
     return posicion;
 }
+
+// Función para contar cuántas veces el dial pasa por el 0 durante la rotación
 int contar_pasos_por_0(int giro, int posicion, char dir)
 {
     int contador_0 = 0;
-    int posicion_inicial = posicion;
-
-    // Realizamos la rotación y verificamos cada paso
-    if (dir == 'R')
+    
+    // Realizamos la rotación paso a paso
+    for (int i = 0; i < giro; i++)
     {
-        for (int i = 0; i < giro; i++) // Rotación a la derecha
+        if (dir == 'R')
         {
-            posicion++;
-            if (posicion >= 100) {
-                posicion = 0; // Vuelta al principio
-            }
-            if ((posicion_inicial <= 0 && posicion > 0) || (posicion_inicial > 0 && posicion <= 0)) {
-                contador_0++; // Paso por el 0
-            }
-            posicion_inicial = posicion;
+            posicion = (posicion + 1) % 100; // Rotación a la derecha
         }
-    }
-    else if (dir == 'L')
-    {
-        for (int i = 0; i < giro; i++) // Rotación a la izquierda
+        else if (dir == 'L')
         {
-            posicion--;
-            if (posicion < 0) {
-                posicion = 99; // Vuelta al final
-            }
-            if ((posicion_inicial >= 0 && posicion < 0) || (posicion_inicial < 0 && posicion >= 0)) {
-                contador_0++; // Paso por el 0
-            }
-            posicion_inicial = posicion;
+            posicion = (posicion - 1 + 100) % 100; // Rotación a la izquierda
+        }
+
+        // Si la posición es 0, incrementamos el contador
+        if (posicion == 0)
+        {
+            contador_0++;
         }
     }
 
@@ -85,42 +75,35 @@ int contar_pasos_por_0(int giro, int posicion, char dir)
 int main()
 {
     string orden;
-    int posicion = 50;
+    int posicion = 50; // Empezamos en la posición 50
     int contraseña = 0;
-    int contador_0 = 0; // Contador para cada vez que la posición sea 0
+    int contador_0 = 0;
 
-    // Abrir archivo de texto
-    ifstream archivo("ordenes.txt"); // Asegúrate de poner la ruta correcta del archivo
+    // Abrimos el archivo con las órdenes
+    ifstream archivo("ordenes.txt"); // 
     if (!archivo.is_open())
     {
         cout << "No se pudo abrir el archivo." << endl;
         return 1;
     }
 
-    // Leer línea por línea del archivo
-    while (getline(archivo, orden)) // Mientras haya líneas en el archivo
+    // Leemos cada línea del archivo y procesamos la rotación
+    while (getline(archivo, orden))
     {
-        int posicion_inicial = posicion;  // Guardamos la posición antes de realizar el giro
-        char dir = obtener_direccion(orden);
-        int giro = obtener_giro(orden);
-        // Contamos cuántas veces pasamos por 0 durante el giro
+        char dir = obtener_direccion(orden); // Obtenemos la dirección (L o R)
+        int giro = obtener_giro(orden); // Obtenemos el número de pasos para la rotación
+
+        // Contamos cuántas veces pasamos por el 0 durante la rotación
         contador_0 += contar_pasos_por_0(giro, posicion, dir);
 
-        // Ahora realizamos la rotación y verificamos si el final es 0
+        // Realizamos la rotación y actualizamos la posición actual
         posicion = girar(giro, posicion, dir);
 
-        // Incrementar contraseña si la posición final es 0
+        // Si la posición final es 0, incrementamos la contraseña
         if (posicion == 0)
         {
             contraseña++;
         }
-
-        cout << "Contraseña: " << contraseña << "\n";
-        cout << "Posición: " << posicion << "\n";
     }
 
-    archivo.close(); // Cerrar el archivo
-    cout << "Cantidad total de veces que se pasó por el 0 (incluyendo durante el giro): " << contador_0 << endl;
-    return 0;
-}
-
+    archivo.close(); // Cerramos el arch
