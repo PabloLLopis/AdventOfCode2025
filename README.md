@@ -23,5 +23,5 @@ Grafos
 Grafos
 Arboles
 Divide y Venceras
-Recursividad
+Programación Dinámica
 
