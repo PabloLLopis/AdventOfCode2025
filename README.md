@@ -8,11 +8,11 @@
 
 ### ENTREGABLES 
 
-*DIA 3*
-Programación Dinámica
-
 *DIA 5*
 Árbol binario de búsqueda de intervalos  para almacenar rangos bajos y altos. 
+
+*DIA 7*
+Programación Dinámica
 
 *DIA 9*
  Hash y divide y venceras
