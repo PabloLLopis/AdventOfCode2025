@@ -1,6 +1,6 @@
-DIA 5
+#DIA 5#
 
-ELECCIÓN DEL PROBLEMA
+*ELECCIÓN DEL PROBLEMA*
 - Este problema del AoC nos permite trabajar con una estructura de arbol, estructura de datos estudiado en la parte teórica de la asignatura.
 ESTRUCTURA DE DATOS UTILIZADA
 - Hemos utilizado una estructura de arbol binario de busqueda especializada en intervalos
