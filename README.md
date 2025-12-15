@@ -5,15 +5,16 @@
 
 ### ENTREGABLES HASTA EL MOMENTO
 
-DIA 3
-Uso de Divide y Vencerás 
+*DIA 3*
+Programación Dinámica
 
-DIA 5
+*DIA 5*
 Árbol binario de búsqueda de intervalos  para almacenar rangos bajos y altos. 
 
-DIA 9
-
-DIA 11
+*DIA 9*
+ Hash y divide y venceras
+*DIA 11*
+Grafos
 
 ### MÉTODOS UTILIZADOS
 
