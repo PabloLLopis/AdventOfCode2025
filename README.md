@@ -13,6 +13,7 @@ Programación Dinámica
 
 *DIA 9*
  Hash y divide y venceras
+ 
 *DIA 11*
 Grafos
 
@@ -23,4 +24,4 @@ Grafos
 Arboles
 Divide y Venceras
 Recursividad
-Algoritmos voraces (greedy)
+
