@@ -1,15 +1,13 @@
 ## ¿Por qué hemos elegido este problema?
 
-El problema del Día 3 de **Advent of Code 2025** nos ha parecido interesante por su enfoque de **optimización de subproblemas** en secuencias de dígitos. La tarea consiste en encontrar la **subsecuencia de dígitos más grande** dentro de cada banco de baterías, con el objetivo de maximizar el "voltaje" generado. El reto está en seleccionar la **subsecuencia óptima** de 12 dígitos, lo que nos permitió aplicar técnicas como la **programación dinámica** y la **memorización** para optimizar el rendimiento.
-
-Este tipo de problemas son una excelente oportunidad para aplicar técnicas de **optimización**, **memorización** y **programación dinámica**, lo cual lo convierte en un desafío perfecto para mejorar nuestras habilidades en el desarrollo de algoritmos eficientes.
+El problema del Día 3 de **Advent of Code 2025** nos ha parecido interesante por su posibilidad de aplicar programacion dinamica en la segunda parte del problema. La tarea consiste en encontrar  dentro de cada banco de baterías, con el objetivo de maximizar el "voltaje" generado la mejor secuencia de 12 dígitos en la segunda parte por lo que si almacenamos en memoria el valor resulta mas sencillo la busqueda del mismo.
 
 ## Técnicas y estructuras de datos utilizadas
 
 En este problema hemos empleado principalmente dos técnicas:
 
 1. **Programación Dinámica (PD)**:
-   - Utilizamos **memorización** dentro de la función para almacenar los resultados de subsecuencias ya calculadas. Este enfoque permite **evitar recalcular las mismas subsecuencias de dígitos** varias veces, lo que mejora la eficiencia del algoritmo.
+   - Utilizamos memorización dentro de la función de voltage    para almacenar los resultados de subsecuencias ya calculadas. Este enfoque permite **evitar recalcular las mismas subsecuencias de dígitos** varias veces, lo que mejora la eficiencia del algoritmo.
    - **¿Por qué?**: La naturaleza del problema implicaba recalcular muchas veces el mismo resultado para las subsecuencias de dígitos. Al almacenar los resultados de las subsecuencias que ya hemos procesado, evitamos redundancias y aceleramos la ejecución.
 
 2. **Estructura de Datos**:
@@ -34,7 +32,7 @@ Otra dificultad fue asegurarnos de que la **memorización** no sobrecargara la m
 - Otra alternativa fue el uso de **recursión pura** sin memorización. Esta opción también fue descartada porque se encontraba con el problema de recalcular los mismos subproblemas, lo que hubiera incrementado enormemente el tiempo de ejecución.
 
 ### Valoración personal:
-Este ejercicio ha sido significativo para nosotros porque nos ha permitido aplicar conceptos de **programación dinámica** y **memorización** en un contexto práctico, optimizando un problema que inicialmente parecía ser sencillo. Aprendimos a reconocer cuándo y cómo utilizar técnicas de **memorización** para **mejorar la eficiencia** de los algoritmos, especialmente cuando se enfrenta a subproblemas repetitivos. Además, trabajar en este tipo de problemas nos ayuda a mejorar la **planificación y estructura** de los algoritmos, asegurándonos de que no solo resuelvan el problema correctamente, sino que lo hagan de manera **eficiente**.
+Este ejercicio ha sido todo un reto para nosotros ya que a pesar que nos ha permitido aplicar conceptos de **programación dinámica** nos costo encontrar la manera de aplicarlo. Ya que en la primera parte
 
 ## Resultados obtenidos:
 
@@ -42,7 +40,3 @@ Este ejercicio ha sido significativo para nosotros porque nos ha permitido aplic
 - **Solución de la Parte 2**: `171419245422055`
 
 **¡Con la obtención de ambas estrellas doradas!**
-
-Esto demuestra cómo, aplicando técnicas de optimización como la **programación dinámica**, conseguimos obtener resultados más rápidos y correctos en problemas complejos de optimización.
-
----
