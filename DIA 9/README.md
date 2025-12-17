@@ -1,4 +1,4 @@
-#  Día 9 — Elección y Resolución del Problema (Advent of Code)
+#  Día 9 — Elección y Resolución del Problema 
 
 ##  Elección del problema
 
