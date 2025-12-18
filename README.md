@@ -5,11 +5,14 @@
 
 ## 👥 Equipo de trabajo
 
+## 👥 Equipo de trabajo
+
 <p align="center">
-  <img src="./winxino_arc_Logo.png" alt="WINXINO_ARC Logo" width="260"/>
-  <br/>
-  <strong>WINXINO_ARC</strong>
+  <img src="./winxino_arc_Logo.png" alt="WINXINO_ARC Logo" width="500"/>
 </p>
+
+
+
 
 ### Miembros del proyecto
 
