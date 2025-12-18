@@ -8,7 +8,7 @@
 ##  Equipo de trabajo
 
 <p align="center">
-  <img src="./winxino_arc_Logo.png" alt="WINXINO_ARC Logo" width="300"/>
+  <img src="./winxino_arc_Logo.png" alt="WINXINO_ARC Logo" width="400"/>
 </p>
 
 
