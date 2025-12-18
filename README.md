@@ -46,7 +46,13 @@ Modelado del problema mediante grafos y aplicación de algoritmos de recorrido y
 
 ---
 
-##  Método
+##  Métodos utiliazdos
 
+Durante el desarrollo del proyecto se han aplicado los siguientes métodos y estructuras de datos:
+
+- Grafos  
+- Árboles  
+- Divide y vencerás  
+- Programación dinámica  
 
 
