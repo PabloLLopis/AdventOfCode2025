@@ -3,9 +3,13 @@
 
 ---
 
-##  EQUIPO 
+##  Equipo de trabajo
 
-**WINCHINO_ARC**
+<p align="center">
+  <img src="winxino_arc_logo.png" alt="WINXINO_ARC Logo" width="300"/>
+</p>
+
+**WINXINO_ARC**
 
 ### Miembros del proyecto
 
@@ -42,16 +46,7 @@ Modelado del problema mediante grafos y aplicación de algoritmos de recorrido y
 
 ---
 
-##  Métodos utilizados
-
-Durante el desarrollo del proyecto se han aplicado los siguientes métodos y estructuras de datos:
-
-- Grafos  
-- Árboles  
-- Divide y vencerás  
-- Programación dinámica  
-
-
+##  Método
 
 
 
