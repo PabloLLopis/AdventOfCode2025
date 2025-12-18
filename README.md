@@ -6,19 +6,17 @@
 ## 👥 Equipo de trabajo
 
 <p align="center">
-  <img src="./winxino_arc_Logo.png" alt="WINXINO_ARC Logo" width="500"/>
+  <img src="./winxino_arc_Logo.png" alt="WINXINO_ARC Logo" width="260"/>
+  <br/>
+  <strong>WINXINO_ARC</strong>
 </p>
-
-
-
-
 
 ### Miembros del proyecto
 
-- **Cesar Lozano Grau**  
-- **Pablo Llopis Sampedro**  
-- **Joseba Nares Villanueva**  
-- **Jaume Gimeno Ponz**
+- Cesar Lozano Grau  
+- Pablo Llopis Sampedro  
+- Joseba Nares Villanueva  
+- Jaume Gimeno Ponz  
 
 ---
 
