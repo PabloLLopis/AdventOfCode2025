@@ -1,8 +1,8 @@
-#  Día 5 — Elección y Resolución del Problema (Advent of Code)
+#  Día 5 — Elección y Resolución del Problema 
 
 ##  ¿Por qué hemos elegido este problema?
 
-El problema seleccionado del **Advent of Code (AoC)** resulta especialmente adecuado para trabajar con **estructuras de datos basadas en árboles**, un contenido fundamental abordado en la parte teórica de la asignatura.  
+El problema seleccionado resulta especialmente adecuado para trabajar con **estructuras de datos basadas en árboles**, un contenido fundamental abordado en la parte teórica de la asignatura.  
 
 ---
 
