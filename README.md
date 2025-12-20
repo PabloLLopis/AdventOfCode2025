@@ -42,17 +42,19 @@ Uso de un árbol binario de búsqueda especializado para almacenar y gestionar r
 
 ---
 
+ ###  Día 8  
+**Grafos (DSU)**  
+Modelado del problema como un grafo completo y ponderado, donde cada punto representa un nodo y la distancia entre ellos define el peso de las aristas.  
+La solución utiliza estructuras Disjoint Set Union (DSU) y colas de prioridad para gestionar la conectividad y obtener el resultado final.
+
+---
+
 ###  Día 9  
 **Hash y Divide y Vencerás**  
 Implementación de tablas hash y técnicas de división del problema en subproblemas más simples, combinando eficiencia en acceso y reducción de complejidad.
 
 ---
 
-###  Día 11  
-**Grafos**  
-Modelado del problema mediante grafos y aplicación de algoritmos de recorrido y búsqueda para obtener la solución.
-
----
 
 ##  Métodos utiliazdos
 
