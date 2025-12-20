@@ -41,14 +41,8 @@ Existen otras posibles aproximaciones al problema, entre ellas:
 
 ##  Valoración personal
 
-La solución basada en un **árbol binario de búsqueda** nos parece una respuesta adecuada y bien fundamentada.  
-Permite aplicar de forma directa la teoría aprendida en clase a un caso práctico, mejorando la comprensión de:
+Este ejercicio con **árbol binario** nos ha resultado interesante, ya que tras diversas charlas sobre cómo plantearlo fuimos afinando la idea hasta dar con una solución clara, haciendo que el desarrollo fuera más dinámico y satisfactorio.
 
-- Estructuras dinámicas  
-- Recursividad  
-- Organización eficiente de datos  
-
-En definitiva, consideramos que esta implementación no solo resuelve el problema planteado, sino que también refuerza de manera significativa el aprendizaje de los conceptos clave de la asignatura.
 
 ---
 
