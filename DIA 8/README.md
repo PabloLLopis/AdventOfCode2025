@@ -1,12 +1,10 @@
 # Día 8 — Elección y Resolución del Problema
 
-## Elección del problema
+##  ¿Por qué hemos elegido este problema?
 
-El problema seleccionado del **Advent of Code** nos permite trabajar con la **agrupación de puntos en el espacio tridimensional**, aplicando conceptos fundamentales de **estructuras de datos, colas de prioridad y algoritmos de unión de conjuntos**.  
-
+El problema seleccionado  nos permite trabajar con la **agrupación de puntos en el espacio tridimensional**, aplicando conceptos fundamentales de **estructuras de datos, colas de prioridad y algoritmos de unión de conjuntos**.  
 El objetivo principal es agrupar puntos en función de la distancia entre ellos y, una vez formados los conjuntos, **calcular el producto de los tamaños de los tres grupos más grandes**.
 
-Este ejercicio resulta especialmente adecuado para reforzar el razonamiento algorítmico y el uso eficiente de estructuras de datos clásicas.
 
 ---
 
@@ -39,26 +37,22 @@ El desarrollo del problema se ha realizado siguiendo los siguientes pasos:
 7. Obtención de los tamaños de todos los conjuntos finales.
 8. Ordenación de los tamaños en orden descendente y **cálculo del producto de los tres mayores**.
 
-Este enfoque permite gestionar de forma eficiente la conectividad entre puntos y obtener el resultado final de manera clara y estructurada.
-
 ---
 
 ## Alternativas consideradas
 
-Existen otras posibles aproximaciones al problema, entre ellas:
+Hemos visto otras formas de hacer al problema, entre ellas:
 
 - Ordenar todas las distancias previamente en un vector en lugar de utilizar una cola de prioridad.
-- Aplicar un algoritmo de agrupación basado en umbrales fijos de distancia.
 - Representar explícitamente el problema como un grafo completo y aplicar variaciones de algoritmos clásicos.
-
-No obstante, estas alternativas presentan mayor coste computacional o menor claridad conceptual para los objetivos de la práctica.
 
 ---
 
 ## Valoración personal
 
-La solución implementada nos parece adecuada y bien alineada con la teoría vista en clase.  
-Además, el uso combinado de estas técnicas facilita la comprensión de cómo resolver problemas de agrupación y conectividad de forma eficiente, reforzando el aprendizaje de diseño algorítmico.
+Este ejercicio con **DSU en grafos** nos ha gustado mucho porque ha sido muy dinámico de hacer en grupo. Entre probar cosas, comentar resultados y ajustar detalles, el tiempo se nos pasó rápido y el ejercicio se hizo bastante ameno.
+
+
 
 ---
 
