@@ -2,8 +2,8 @@
 
 ##  ¿Por qué hemos elegido este problema?
 
-El problema seleccionado  nos permite trabajar con la **agrupación de puntos en el espacio tridimensional**, aplicando conceptos fundamentales de **estructuras de datos, colas de prioridad y algoritmos de unión de conjuntos**.  
-El objetivo principal es agrupar puntos en función de la distancia entre ellos y, una vez formados los conjuntos, **calcular el producto de los tamaños de los tres grupos más grandes**.
+El problema seleccionado  nos permite trabajar con la agrupación de puntos en el espacio tridimensional, aplicando conceptos fundamentales de **estructuras de datos, colas de prioridad y algoritmos de unión de conjuntos**.  
+El objetivo principal es agrupar puntos en función de la distancia entre ellos y, una vez formados los conjuntos, calcular el producto de los tamaños de los tres grupos más grandes.
 
 
 ---
