@@ -56,16 +56,10 @@ Sin embargo, estas alternativas presentan mayor coste computacional o menor inte
 
 ##  Valoración personal
 
-La solución implementada nos parece adecuada y bien alineada con la teoría vista en clase.  
-Permite aplicar de forma práctica conceptos como:
+Este ejercicio con **hash** nos ha resultado entretenido y nos ha hecho reflexionar sobre cómo organizar los datos de forma eficiente, además de fomentar el trabajo en grupo, ya que ha sido necesario compartir ideas y colaborar para llegar a una solución adecuada.
 
-- estructuras dinámicas,
-- ordenación personalizada,
-- tablas hash,
-- análisis de complejidad,
-- filtrado de casos inválidos.
 
-Además, el paso de una solución simple a otra más elaborada facilita la comprensión de cómo **mejorar progresivamente un algoritmo**, reforzando el aprendizaje de diseño y optimización de soluciones.
+
 
 ---
 
