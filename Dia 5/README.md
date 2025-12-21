@@ -49,6 +49,7 @@ Este ejercicio con **árbol binario** nos ha resultado interesante, ya que tras 
 ## Compilación
 
 Para compilar el programa necesitamos:
-g++ dia8.cpp -o dia8
-./dia8
+g++ part1_day5.cpp -o part1_day5.cpp
+./part1_day5
 (necesita el input.txt)
+(para la parte 2 cambiar el numero 1 por el 2)
