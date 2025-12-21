@@ -59,7 +59,7 @@ Este ejercicio con **DSU en grafos** nos ha gustado mucho porque ha sido muy din
 ## Compilación
 
 Para compilar el programa necesitamos:
-g++ -std=c++17 -O2 dia8.cpp -o dia8
+g++ dia8.cpp -o dia8
 ./dia8
 (necesita el input.txt)
 
