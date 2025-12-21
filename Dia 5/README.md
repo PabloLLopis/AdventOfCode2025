@@ -49,7 +49,7 @@ Este ejercicio con **árbol binario** nos ha resultado interesante, ya que tras 
 ## Compilación
 
 Para compilar el programa necesitamos:
-g++ part2_day5.cpp -o part2_day5.cpp
+g++ part2_day5.cpp -o part2_day5
 ./part2_day5
 (necesita el input.txt)
 
