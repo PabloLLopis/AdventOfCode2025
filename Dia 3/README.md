@@ -8,7 +8,7 @@ En este problema hemos empleado:
 
 **Programación Dinámica (PD)**:
    - Utilizamos memorización dentro de la función de voltage para almacenar los resultados de subsecuencias ya calculadas. Eso evita recalcular las mismas subsecuencias de dígitos varias veces, lo que mejora la eficiencia del algoritmo.
-   - 
+     
 ## Resolución del problema
 
 ### Parte 1:
