@@ -63,6 +63,7 @@ Durante el desarrollo del proyecto se han aplicado los siguientes métodos y est
 - Grafos  
 - Árboles  
 - Divide y vencerás  
-- Programación dinámica  
+- Programación dinámica
+- Tabla Hash
 
 
