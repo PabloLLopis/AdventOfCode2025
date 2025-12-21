@@ -56,8 +56,6 @@ Este ejercicio con **DSU en grafos** nos ha gustado mucho porque ha sido muy din
 
 ---
 
-## Resultado obtenido
-
-- **Parte 1:** `96672`
+## Compilación
 
 ---
