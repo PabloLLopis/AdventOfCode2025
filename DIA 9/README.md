@@ -1,31 +1,28 @@
 #  Día 9 — Elección y Resolución del Problema 
 
-##  Elección del problema
+## Elección del problema
 
-El problema seleccionado del **Advent of Code** nos permite trabajar con el análisis de combinaciones de coordenadas dentro de una rejilla, aplicando conceptos fundamentales de **estructuras de datos, ordenación y análisis de complejidad**.  
+El problema seleccionado del **Advent of Code** nos permite trabajar con el análisis de combinaciones de coordenadas dentro de una rejilla, aplicando conceptos fundamentales de **estructuras de datos como técnicas de hash, divide y vencerás**
 El objetivo es calcular el **área máxima de un rectángulo** definido por dos baldosas rojas, utilizando sus coordenadas como esquinas opuestas.
 
 
 ---
 
-##  Estructuras de datos utilizadas
+## Estructuras de datos utilizadas
 
 Para la resolución del problema hemos utilizado las siguientes estructuras:
 
 - `vector` para almacenar dinámicamente las baldosas rojas.
 - `struct` para representar coordenadas y baldosas de forma clara y tipada.
-- **Tabla hash implementada manualmente** mediante un vector de listas, con el objetivo de:
+- **Tabla hash implementada** mediante un vector de listas, con el objetivo de:
   - evitar duplicados,
   - permitir comprobaciones de presencia en tiempo constante promedio.
-- Estructuras auxiliares para representar **rangos prohibidos** dentro de la rejilla.
 
 Además, hemos implementado un **algoritmo de ordenación propio (quicksort iterativo)**, evitando el uso de librerías estándar como `<algorithm>`.
 
 ---
 
-##  Cómo se ha abordado el problema
-
-El desarrollo lo hemos realizado en dos niveles de complejidad:
+## Cómo se ha abordado el problema
 
 1. **Lectura de datos** desde un fichero de entrada con coordenadas `(x, y)`.
 2. Almacenamiento de las baldosas rojas en una estructura dinámica.
@@ -38,6 +35,7 @@ El desarrollo lo hemos realizado en dos niveles de complejidad:
 7. Obtención del área máxima entre todas las combinaciones válidas.
 
 Este enfoque permite mantener la corrección del resultado al mismo tiempo que se reduce el número de cálculos innecesarios.
+
 
 ---
 
