@@ -46,3 +46,9 @@ Este ejercicio con **árbol binario** nos ha resultado interesante, ya que tras 
 
 ---
 
+## Compilación
+
+Para compilar el programa necesitamos:
+g++ dia8.cpp -o dia8
+./dia8
+(necesita el input.txt)
