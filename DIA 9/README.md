@@ -56,8 +56,11 @@ Sin embargo, estas alternativas presentan mayor coste computacional.
 Este ejercicio con **hash** nos ha resultado entretenido y nos ha hecho reflexionar sobre cómo organizar los datos de forma eficiente, además de fomentar el trabajo en grupo, ya que ha sido necesario compartir ideas y colaborar para llegar a una solución adecuada.
 
 
-
-
 ---
 
+## Compilación
 
+Para compilar el programa necesitamos:
+g++ parte2_dia9.cpp -o parte2_dia9
+./parte2_dia9
+(necesita el area.txt)
