@@ -30,7 +30,7 @@
 
 ##  Entregables
 
-###  Día 7  
+###  Día 3  
 **Programación Dinámica**  
 Resolución de un problema mediante técnicas de optimización basadas en subproblemas y reutilización de resultados intermedios.
 
