@@ -30,11 +30,7 @@
 
 ##  Entregables
 
-###  Día 3  
-**Programación Dinámica**  
-Resolución de un problema mediante técnicas de optimización basadas en subproblemas y reutilización de resultados intermedios.
 
----
 
 ###  Día 5  
 **Árbol binario de búsqueda de intervalos**  
