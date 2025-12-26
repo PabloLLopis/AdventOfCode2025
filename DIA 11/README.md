@@ -49,11 +49,10 @@ Otra dificultad fue el tratamiento de grafos grandes, lo que hizo necesario usar
 
 ---
 
-### Alternativas descartadas
+### Alternativas 
 
 - **Búsqueda exhaustiva sin memoización**: descartada por su alto coste computacional.
-- **Uso exclusivo de strings sin hash**: hacía el código más lento y complejo.
-- **Recorridos sin control de estados**: provocaban recomputaciones innecesarias.
+- **Uso exclusivo de strings sin hash**: hace el código más lento y complejo.
 
 Finalmente, la combinación de grafo + tabla hash + programación dinámica resultó ser la opción más adecuada.
 
@@ -61,8 +60,8 @@ Finalmente, la combinación de grafo + tabla hash + programación dinámica resu
 
 ### Valoración personal
 
-Este ejercicio nos ha resultado muy interesante y entretenido, ya que nos ha obligado a combinar varias técnicas distintas en una misma solución.  
-El trabajo en grupo ha sido clave para debatir el enfoque y entender cómo optimizar el conteo de caminos, lo que ha hecho que el proceso de desarrollo fuera más fluido y enriquecedor.
+Este ejercicio nos ha resultado muy interesante ya que hemos tenido que implementar 3 diferentes estructuras en un mismo problema, esto mismo nos ha llevado a tener diferentes opiniones y posibilidades respecto al ejercicio. 
+Tras ello, ver como se ha implementado todo y el resultado final, estamos muy satisfechos.
 
 ---
 
