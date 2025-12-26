@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// Árbol de intervalos (interval tree) para almacenar y consultar rangos eficientemente
 struct Node
 {
     long long low;     // inicio del intervalo
@@ -34,17 +35,21 @@ Node *insertNode(Node *root, long long low, long long high)
     return root;
 }
 
+// Verifica si un valor x se encuentra dentro de algún intervalo del árbol
 bool overlaps(Node *root, long long x)
 {
     if (root == nullptr)
         return false;
 
+    // Si x está dentro del intervalo actual
     if (root->low <= x && x <= root->high)
         return true;
 
+    // Busca en el subárbol izquierdo si hay posibilidad de encontrar x
     if (root->left != nullptr && root->left->maxHigh >= x)
         return overlaps(root->left, x);
 
+    // Busca en el subárbol derecho
     return overlaps(root->right, x);
 }
 void inorder(Node *root, vector<long long> &L, vector<long long> &R)
@@ -83,31 +88,34 @@ int main()
     inorder(root, L, R);
     int k = 0;
 
+    // Fusiona intervalos superpuestos
     for (int i = 1; i < L.size(); i++)
     {
-
         long long currLow = L[i];
         long long currHigh = R[i];
 
+        // Si el intervalo actual no se solapa con el anterior, es un nuevo intervalo
         if (currLow > R[k] + 1)
         {
             k++;
             L[k] = currLow;
             R[k] = currHigh;
         }
+        // Si se solapa, extiende el intervalo anterior si es necesario
         else
         {
             if (currHigh > R[k])
                 R[k] = currHigh;
         }
     }
+    // Calcula la suma total de tamaños de todos los intervalos fusionados
     long long total = 0;
     for (int i = 0; i <= k; i++)
     {
-        total += (R[i] - L[i] + 1);
+        total += (R[i] - L[i] + 1); // Cantidad de números en el intervalo [L[i], R[i]]
     }
 
-    cout << total << endl;
+    cout << total << endl; // Resultado final
 
     return 0;
 }
