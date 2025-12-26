@@ -32,7 +32,6 @@ En este ejercicio hemos empleado las siguientes técnicas:
 
 ### Resolución del problema
 
-#### Parte 1
 La resolución se centra en construir el grafo dirigido a partir del fichero de entrada, donde cada línea indica un dispositivo y sus salidas.  
 Una vez construido el grafo, se realiza un conteo de caminos desde `you` hasta `out` utilizando una función recursiva con memoización.
 
@@ -45,7 +44,7 @@ Este enfoque permite recorrer todas las rutas posibles sin repetir cálculos inn
 Una de las principales dificultades fue gestionar correctamente el conteo de caminos sin caer en cálculos repetidos.  
 Una solución basada únicamente en DFS sin memoización resultaba muy ineficiente, ya que el mismo nodo podía visitarse muchas veces desde distintos caminos.
 
-Otra dificultad fue el tratamiento de grafos grandes, lo que hizo necesario usar una tabla hash para convertir los nombres de los nodos en identificadores numéricos y simplificar el manejo interno del grafo.
+Otra dificultad ha sido el tratamiento de grafos grandes, lo que hizo necesario usar una tabla hash para convertir los nombres de los nodos en identificadores numéricos y simplificar el manejo interno del grafo.
 
 ---
 
