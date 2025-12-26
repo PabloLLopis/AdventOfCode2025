@@ -49,9 +49,11 @@ La solución utiliza estructuras Disjoint Set Union (DSU) y colas de prioridad p
 
 ---
 
-###  Día 9  
-**Hash y Divide y Vencerás**  
-Implementación de tablas hash y técnicas de división del problema en subproblemas más simples, combinando eficiencia en acceso y reducción de complejidad.
+### Día 11  
+**Grafos + Tabla Hash + Programación Dinámica**  
+Modelado del problema como un grafo dirigido, donde cada dispositivo representa un nodo y cada conexión una arista.  
+Se utiliza una tabla hash propia para mapear los nodos y programación dinámica con memoización para contar de forma eficiente todos los caminos posibles desde `you` hasta `out`.
+
 
 ---
 
@@ -61,8 +63,7 @@ Implementación de tablas hash y técnicas de división del problema en subprobl
 Durante el desarrollo del proyecto se han aplicado los siguientes métodos y estructuras de datos:
 
 - Grafos  
-- Árboles  
-- Divide y vencerás  
+- Árboles    
 - Programación dinámica
 - Tabla Hash
 
