@@ -46,7 +46,7 @@ La solución utiliza estructuras Disjoint Set Union (DSU) y colas de prioridad p
 ---
 
 ### Día 11  
-**Grafos + Tabla Hash + Programación Dinámica**  
+**Tabla Hash + Grafos + Programación Dinámica**  
 Modelado del problema como un grafo dirigido, donde cada dispositivo representa un nodo y cada conexión una arista.  
 Se utiliza una tabla hash propia para mapear los nodos y programación dinámica con memoización para contar de forma eficiente todos los caminos posibles desde `you` hasta `out`.
 
